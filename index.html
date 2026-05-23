@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2>MyGallery</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Where Images Tell Stories</h1>
+        <p>Browse, search, and filter high-quality visuals in one place</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+
+        <!-- Search -->
+        <input type="text" id="searchInput" placeholder="Search images...">
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="nature">Nature</button>
+            <button class="filter" data-filter="travel">Travel</button>
+            <button class="filter" data-filter="cars">Cars</button>
+            <button class="filter" data-filter="design">Design</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery">
+
+            <!-- 15 Images -->
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" data-category="nature"
+                data-title="Forest" class="item">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" data-category="nature"
+                data-title="Mountain" class="item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" data-category="nature"
+                data-title="Ocean" class="item">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" data-category="nature"
+                data-title="Lake" class="item">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800" data-category="nature"
+                data-title="Sunset" class="item">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800" data-category="nature"
+                data-title="Forest Path" class="item">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" data-category="nature"
+                data-title="Hills" class="item">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800" data-category="nature"
+                data-title="Waterfall" class="item">
+            <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800" data-category="nature"
+                data-title="Sky" class="item">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800" data-category="nature"
+                data-title="Green Field" class="item">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800" data-category="nature"
+                data-title="Desert" class="item">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" data-category="nature"
+                data-title="Wild Forest" class="item">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800" data-category="nature"
+                data-title="Nature View" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO466OhgjXh0uu4plXp4cwvltJ0TpCgt0U5g&s"
+                data-category="nature" data-title="moon" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuc_GlOGIsNcNbCb5k3RQaWPwUbtWmJCNGGw&s"
+                data-category="travel" data-title="Beach" class="item">
+            <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800" data-category="travel"
+                data-title="City Night" class="item">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800" data-category="travel"
+                data-title="Mountains Trip" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsv3bIszW60TI-NrDeuWh__8bz8rS58nXcGA&s"
+                data-category="travel" data-title="Paris" class="item">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" data-category="travel"
+                data-title="Dubai" class="item">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800" data-category="travel"
+                data-title="Road Trip" class="item">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=800" data-category="travel"
+                data-title="Hotel" class="item">
+            <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=800" data-category="travel"
+                data-title="Airport" class="item">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800" data-category="travel"
+                data-title="Island" class="item">
+            <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=800" data-category="travel"
+                data-title="Tour City" class="item">
+            <img src="https://images.unsplash.com/photo-1520962922320-2038eebab146?w=800" data-category="travel"
+                data-title="Train Journey" class="item">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" data-category="travel"
+                data-title="Adventure" class="item">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800" data-category="travel"
+                data-title="Bridge Travel" class="item">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800" data-category="travel"
+                data-title="Vacation" class="item">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800" data-category="travel"
+                data-title="Travel Map" class="item">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800" data-category="cars"
+                data-title="Sports Car" class="item">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" data-category="cars"
+                data-title="Luxury Car" class="item">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" data-category="cars"
+                data-title="BMW" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaFWNLV074pcKOVOa8Y-tdHjfTb5yTdpbuQ&s"
+                data-category="cars" data-title="Audi" class="item">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800" data-category="cars"
+                data-title="Mercedes" class="item">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" data-category="cars"
+                data-title="Super Car" class="item">
+            <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800" data-category="cars"
+                data-title="Electric Car" class="item">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800" data-category="cars"
+                data-title="Car Interior" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRXHqius3HtbnrEpAtGELLM55WaKagy6PUw&s"
+                data-category="cars" data-title="Race Car" class="item">
+            <img src="https://cdn.prod.website-files.com/5b4a3b3971d099f78f362505/64b5e32f6ca56993b10b8a2d_1968-Ford-Mustang-coupe-Red-8R01C132805_001.webp"
+                data-category="cars" data-title="Classic Car" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSddzz6UpJr7MTaxmlZrgol6YEpGI2oEJNjqg&s"
+                data-category="cars" data-title="Car Show" class="item">
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800" data-category="cars"
+                data-title="Road Car" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESCvxq1VHz_keb8vmpfGSfAzoJ5UQKrd1aA&s"
+                data-category="cars" data-title="Driving Car" class="item">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" data-category="cars"
+                data-title="Modern Car" class="item">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" data-category="cars"
+                data-title="Speed Car" class="item">
+            <img src="https://png.pngtree.com/element_our/png/20180828/seamless-floral-pattern-background-luxury-style-background-vector-illustration-png_71430.jpg" data-category="design"
+                data-title="desing" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHQr8BJ0lI_nto_Hmv4NyCumz1dqMUc262g&s" data-category="design"
+                data-title="Logo Design" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzVf2KGG-6gmu5Zwa7h9KCUUkN5P5CjGNFw&s" data-category="design"
+                data-title="Modern Art" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_ng8UNBgGQ5mWpFhwHt7WcaZof1D9Fuj9w&s" data-category="design"
+                data-title="Creative Design" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoAH0zZe_vqPToKIU7DbJdS5Z5dkffn6K5Q&s" data-category="design"
+                data-title="Abstract Art" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR05Ry5VearQki3C4eQ1jz5Xg2sXC_ueFOFJQ&s" data-category="design"
+                data-title="Typography" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3KcQQ71QHy8Mv0UF5cGjjfWx8Z198bxKIg&s" data-category="design"
+                data-title="Branding" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjKjW6VjQ_4tMIKNj0f6SjQk2vXKycPkX1w&s" data-category="design"
+                data-title="Color Design" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5t-dJVWj20nKszRKKePOT5r0yu5-i-VcgqA&s" data-category="design"
+                data-title="Poster Design" class="item">
+            <img src="https://vac3.sgp1.digitaloceanspaces.com/wp-content/uploads/2023/05/06162238/176937-1536x864.webp" data-category="design"
+                data-title="Digital Art" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-3xJ0k2N1ZVP-Du2YJLbViioXD4131cbHg&s" data-category="design"
+                data-title="UI UX" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0WTFHH5gauurFAIyFa4giRY850tTV-Qdqw&s" data-category="design"
+                data-title="Minimal Design" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKODOraU1r_m1E4Ks5N0URC947kMXXQ4V50A&s" data-category="design"
+                data-title="Creative Work" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5nPiWbnJkdcXh7iQEp1uombzloLEuVPxwyg&s" data-category="design"
+                data-title="Art Board" class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Dv9a33RdUiZ7ktWBtKUKBs34tGg7sz0LCQ&s" data-category="design"
+                data-title="Design Studio" class="item">
+
+
+
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span id="close">&times;</span>
+        <img id="lightboxImg">
+        <div class="controls">
+            <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MyGallery. All Rights Reserved.</p>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
